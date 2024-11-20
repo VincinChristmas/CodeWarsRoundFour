@@ -11,6 +11,42 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 2
+
+/*
+Everybody has probably heard of the animal heads and legs problem from the earlier years at school. It goes:
+
+“A farm contains chickens and cows. There are x heads and y legs. How many chickens and cows are there?” 
+
+Where x <= 1000 and y <=1000
+
+#Task
+
+Assuming there are no other types of animals, work out how many of each animal are there.
+
+Return a tuple in Python - (chickens, cows) and an array list - [chickens, cows]/{chickens, cows} in all other languages
+
+If either the heads & legs is negative, the result of your calculation is negative or the calculation is a float return "No solutions" (no valid cases), or [-1, -1] in COBOL.
+*/                       
+
+//MY SOLUTION
+function animals(heads, legs) {
+  let x = (legs / 2) - heads;
+  
+ 
+  let y = heads - x;
+
+  
+  if (Number.isInteger(x) === false || Number.isInteger(y) === false) {
+     return "No solutions"; 
+  } else if ( x >= 0 && y >= 0) {
+   return [y, x]; 
+  }
+  else {
+    return "No solutions"
+  }
+}
+
 //NUMBER 1
 
 /*
