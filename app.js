@@ -10,6 +10,33 @@
 
 
 /*********THE ABOVE IS A TEMPLATE*************** */
+//NUMBER 11
+
+/*
+Triple Trouble
+Create a function that will return a string that combines all of the letters of the three inputed strings in groups. 
+Taking the first letter of all of the inputs and grouping them next to each other. Do this for every letter, see example below!
+
+E.g. Input: "aa", "bb" , "cc" => Output: "abcabc"
+
+Note: You can expect all of the inputs to be the same length.
+
+*/                       
+
+//MY SOLUTION
+
+function tripleTrouble(one, two, three){
+  //Solution
+  let newTrouble = []
+  for (let i = 0; i < one.length; i++) {
+      newTrouble.push(one[i])
+      newTrouble.push(two[i])
+      newTrouble.push(three[i])
+    
+    
+  }
+  return newTrouble.join('')
+ }
 
 
 //NUMBER 10
