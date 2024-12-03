@@ -10,6 +10,25 @@
 
 
 /*********THE ABOVE IS A TEMPLATE*************** */
+//NUMBER 15
+
+/*
+iven a triangle, defined by the cartesian coordinates of its vertices we need to localize its barycenter or centroid.
+
+The function bar_triang() or barTriang or bar-triang, receives the coordinates of the three vertices A, B and C  as 
+three different arguments and outputs the coordinates of the barycenter O in an array [xO, yO]
+*/                       
+
+//MY SOLUTION
+function barTriang(p1, p2, p3){
+  //your code here
+  let x = (p1[0] + p2[0] + p3[0]) /3
+  let y = (p1[1] + p2[1] + p3[1]) /3
+  let medianPoints = [ Number(x.toFixed(4)),  Number(y.toFixed(4))]
+ 
+  return medianPoints
+}
+
 
 //NUMBER 14
 
