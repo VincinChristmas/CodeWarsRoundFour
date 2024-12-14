@@ -12,6 +12,57 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 20
+
+/*
+Given the molecular mass of two molecules 
+M
+1
+M 
+1
+​
+  and 
+M
+2
+M 
+2
+​
+ , their masses present 
+m
+1
+m 
+1
+​
+  and 
+m
+2
+m 
+2
+​
+  in a vessel of volume 
+V
+V at a specific temperature 
+T
+T, find the total pressure 
+P
+t
+o
+t
+a
+l
+P 
+total
+​
+  exerted by the molecules.
+*/                       
+
+//MY SOLUTION
+const solution = (molarMass1, molarMass2, givenMass1, givenMass2, volume, temp) => { 
+  const R = 0.082; 
+  const tempInKelvin = temp + 273.15; 
+ let molarMass = ((givenMass1 / molarMass1) + (givenMass2 / molarMass2)); 
+  return molarMass * (R * tempInKelvin / volume); }
+
 //NUMBER 19
 
 /*
