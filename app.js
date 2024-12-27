@@ -12,6 +12,30 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 26
+
+/*
+If either the candidate's minimum salary or the job's maximum salary is not present, throw an error.
+
+For a valid match, the candidate's minimum salary must be less than or equal to the job's maximum salary. 
+However, let's also include 10% wiggle room (deducted from the candidate's minimum salary) in case the candidate 
+is a rockstar who enjoys programming 
+on Codewars in their spare time. The company offering the job may be able to work something out.
+*/                       
+
+//MY SOLUTION
+function match(candidate, job) {
+  if (typeof job.maxSalary === 'undefined' || typeof candidate.minSalary === 'undefined') {
+    throw new TypeError('error');
+  }
+ else if (candidate.minSalary-(candidate.minSalary * .10) <= job.maxSalary) {
+    return true
+  }
+  else {
+    return false
+  }
+}
+
 //NUMBER 25
 
 /*
