@@ -8,6 +8,28 @@
 
 
 /*********THE ABOVE IS A TEMPLATE*************** */
+//NUMBER 40
+
+/*
+In this kata, the function will take a string as its argument, and return a string with every word replaced by the explanation to everything, 
+according to Freud. Note that an empty string, or no arguments, should return an empty string.
+*/                       
+
+//MY SOLUTION
+
+function toFreud(string) {
+  let newString = string.split(' ')
+  if (string==="") {
+    return ""
+  }
+    else {
+  for (let i = 0; i < newString.length; i++) {
+    newString[i] = 'sex'
+  }
+      }
+    return newString.join(' ')
+  }
+
 //NUMBER 39
 
 /*
