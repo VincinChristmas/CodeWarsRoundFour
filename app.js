@@ -9,6 +9,17 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 44
+
+/*
+This method, which is supposed to return the result of dividing its first argument by its second, isn't always returning correct values. Fix it.
+*/                       
+
+//MY SOLUTION
+function solve(x, y) {
+  return x/y
+} 
+
 //NUMBER 43
 
 /*
