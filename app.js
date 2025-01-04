@@ -9,6 +9,22 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 43
+
+/*
+Write a function that accepts arbitrary X and Y resolutions and converts them into resolutions with a 16:9 aspect 
+ratio that maintain equal height. Round your answers up to the nearest integer.
+*/                       
+
+//MY SOLUTION
+
+function aspectRatio(x,y){
+  let ratio = []
+  ratio.push(Math.ceil((y*16)/9))
+  ratio.push(y)
+    return ratio
+  }
+
 
 //NUMBER 42
 
