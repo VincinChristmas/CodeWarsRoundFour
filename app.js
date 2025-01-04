@@ -9,6 +9,28 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 46
+
+/*
+Write a function howMuchWater (JS)/how_much_water (Python and Ruby) to work out how much water is needed 
+if you have a clothes amount of clothes. The function will accept 3 arguments: - water, load (or max_loadin Ruby) and clothes.
+*/                       
+
+//MY SOLUTION
+function howMuchWater(water, load, clothes){
+  let tooMany = load * 2
+  if (clothes < load) {
+    return 'Not enough clothes'
+  }
+  else if (clothes > tooMany) {
+    return 'Too much clothes'
+  }
+  else {
+    const waterNeeded = water * Math.pow(1.1, clothes - load);
+    return Number(waterNeeded.toFixed(2));
+  }
+}
+
 //NUMBER 45
 
 /*
