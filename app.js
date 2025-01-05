@@ -8,6 +8,22 @@
 
 
 /*********THE ABOVE IS A TEMPLATE*************** */
+
+//NUMBER 51
+
+/*
+Create a package.json configuration and assign it to the configuration constant so it can be tested.
+
+To pass the kata you need only the least that a real package file would require.
+*/                       
+
+//MY SOLUTION
+const configuration = {
+  "name": "foo",
+   "version": "1.2.3",
+  "description": "A packaged foo fooer for fooing foos"
+};
+
 //NUMBER 50
 
 /*
