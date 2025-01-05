@@ -9,6 +9,24 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 63
+
+/*
+Complete the Person object, by completing the FillFriends function to fill the _friends Array for the person object.
+*/                       
+
+//MY SOLUTION
+var Person = function(){
+  var person = {
+    _name: "Leroy",
+    _friends: [],
+    fillFriends(f) { 
+      this._friends = this._friends.concat(f)
+    }
+  }
+  return person;
+}
+
 //NUMBER 62
 
 /*
