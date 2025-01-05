@@ -9,6 +9,19 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 52
+
+/*
+Your task is to simply calculate the loudness of a sound wave, given its intensity as a parameter to the dBScale/db_scale function.
+*/                       
+
+//MY SOLUTION
+
+function dBScale(intensity) {
+  const referenceIntensity = 1e-12; 
+    return 10 * Math.log10(intensity / referenceIntensity);
+  }
+
 //NUMBER 51
 
 /*
