@@ -8,6 +8,19 @@
 
 
 /*********THE ABOVE IS A TEMPLATE*************** */
+//NUMBER 55
+
+/*
+You task to pass only this tests :
+
+a == false
+!a == false
+a == !a
+*/                       
+
+//MY SOLUTION
+const a = new Boolean(false)
+
 //NUMBER 54
 
 /*
