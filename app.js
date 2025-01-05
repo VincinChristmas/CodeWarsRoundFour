@@ -9,6 +9,21 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 47
+
+/*
+Function should return a dictionary/Object/Hash with "status" as a key, whose value can : "busy" or "available"
+ depending on the truth value of the argument is_busy.
+*/                       
+
+//MY SOLUTION
+function getStatus(isBusy) {
+  var msg = (isBusy ? "busy" : "available");
+  return {
+    status: msg
+  }
+}
+
 //NUMBER 46
 
 /*
