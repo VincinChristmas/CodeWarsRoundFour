@@ -8,6 +8,65 @@
 
 
 /*********THE ABOVE IS A TEMPLATE*************** */
+//NUMBER 65
+
+/*
+Your task is to create a function that takes two parameters:
+
+text: A string containing the text to be wrapped in comments.
+style: A string indicating the style of comments to use. It can be one of the following:
+"Bash"
+"Bash Multiline"
+"JavaDoc"
+"Python"
+"Python Multiline"
+"Javascript"
+"Javascript Multiline"
+"SGML"
+"SQL"
+The function should wrap the given text in the appropriate comment style and return the result.
+*/                       
+
+//MY SOLUTION
+function comment(text, style) {
+  const lines=text.split('\n')
+  switch(style) {
+      case "Bash":
+      case "Python":
+      return lines.map(line=>`# ${line}`).join('\n')
+      break;
+      
+      case "Bash Multiline":
+      return `: "\n${text}\n"`
+      break;
+      
+      case "JavaDoc":
+      return `/**\n${lines.map(line=> `* ${line}`).join('\n')}\n*/`
+      break;
+      
+      case "Python Multiline":
+      return `"""\n${text}\n"""`
+      break;
+      
+      case "Javascript":
+      return lines.map(line=>`// ${line}`).join('\n')
+      break;
+      
+      case "Javascript Multiline":
+      return `/*\n${text}\n*/`
+      break;
+      
+      case "SGML":
+      return lines.map(line=>`<!-- ${line} -->`).join('\n')
+      break;
+      
+      case "SQL":
+      return lines.map(line=>`-- ${line}`).join('\n')
+      
+      default:
+      return "please enter your language"
+  }
+}
 
 //NUMBER 64
 
