@@ -26,14 +26,9 @@ For example:
 function digitMultiplication(expr) {
   let multiBoxLeft = []
   let multiBoxRight = []
-  
-  for (let i = 0; i < expr.length; i++) {
-      multiBoxLeft.push(expr[i])
-      if (expr[i] === '+') {
-        multiBoxRight.push(expr[i + 1])
-      }
-    
-  
+  if (expr.includes('+')) {
+    multiBoxLeft.push(expr[0], expr[expr.indexOf('+') - 1])
+    multiBoxRight.push(expr[expr.indexOf('+') + 1], expr[expr.length - 1])
   }
   return multiBoxRight
 }
