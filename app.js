@@ -9,7 +9,7 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
-//NUMBER 66
+//NUMBER 66 failed kata
 
 /*
 Multiply the adjacent digits which are not separated by a '-' or a '+' in a string, then do the sum.
