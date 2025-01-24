@@ -9,7 +9,7 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
-//NUMBER 67 -- in progress
+//NUMBER 67 -- failed kata
 
 /*
 given an array of integers, which represent the stones, and your task is 
@@ -67,6 +67,29 @@ or other language-specific alternative.
 */
 
 //MY SOLUTION
+function pyramid(stones) {
+  
+  let prepStones = stones.sort((a, b) => a - b)
+  let layerOne = prepStones[0]
+  let layerTwo = []
+  let layerThree = []
+  let sumTwo
+  let sumThree 
+  
+  for (let i = 0; i < prepStones.length; i++) {
+    if ((layerOne !== prepStones[i]) && layerTwo.length !== 2) {
+      layerTwo.push(prepStones[i])
+      sumTwo = layerTwo[0] + layerTwo[1] 
+    }
+    if ((layerOne !== prepStones[i]) && layerTwo.includes(prepStones[i]) == false && layerThree.length !== 3) {
+       layerThree.push(prepStones[i])
+        sumThree = layerThree[0] + layerThree[1] + layerThree[2]
+    }
+  }
+  let finals =  layerOne + sumTwo + sumThree
+  
+  
+}
 
 
 //NUMBER 66 failed kata
