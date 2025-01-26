@@ -9,6 +9,101 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 68 failed kata
+
+/*
+ou have clothes international size as text (xs, s, xxl).
+Your goal is to return European number size as a number from that size.
+
+Notice that there is arbitrary amount of modifiers (x), excluding m size, and input can be any string.
+
+Linearity
+Base size for medium (m) is 38.
+(then, small (s) is 36, and large (l) is 40)
+
+The scale is linear; modifier x continues that by adding or subtracting 2 from resulting size.
+
+(For sizes where x modifier makes total size negative, treat that as OK, and return negative size)
+
+Invalid cases
+Function should handle wrong/invalid sizes.
+
+Valid input has any base size (s/m/l) and any amount of modifiers (x) before base size (like xxl).
+Notice that you cannot apply modifier for m size, consider that case as invalid!
+Anything else is disallowed and should be considered as invalid (None for Python, 0, false for Go, null for JavaScript).
+
+Invalid examples: xxx, sss, xm, other string
+*/                       
+
+//MY SOLUTION by deepseek AI
+function sizeToNumber(size) {
+  // Handle invalid input (empty string, null, undefined, etc.)
+  if (!size || typeof size !== 'string') {
+    return null;
+  }
+
+  // Convert to lowercase for case insensitivity
+  size = size.toLowerCase();
+
+  // Find the base size (s, m, l) and count the number of 'x' modifiers
+  let baseSize = '';
+  let xCount = 0;
+
+  for (let i = 0; i < size.length; i++) {
+    const char = size[i];
+
+    if (char === 's' || char === 'm' || char === 'l') {
+      // If base size is already found, it's invalid (e.g., 'ss', 'sm')
+      if (baseSize !== '') {
+        return null;
+      }
+      baseSize = char;
+    } else if (char === 'x') {
+      xCount++;
+    } else {
+      // If any invalid character is found, return null
+      return null;
+    }
+  }
+
+  // If no base size is found, it's invalid
+  if (baseSize === '') {
+    return null;
+  }
+
+  // Check if modifiers are applied to 'm' (invalid case)
+  if (baseSize === 'm' && xCount > 0) {
+    return null;
+  }
+
+  // Calculate the base European size
+  let europeanSize;
+  switch (baseSize) {
+    case 's':
+      europeanSize = 36;
+      break;
+    case 'm':
+      europeanSize = 38;
+      break;
+    case 'l':
+      europeanSize = 40;
+      break;
+    default:
+      return null; // Invalid base size (should not happen)
+  }
+
+  // Apply modifiers
+  // For 's' and 'l', each 'x' subtracts or adds 2, respectively
+  if (baseSize === 's') {
+    europeanSize -= xCount * 2; // Subtract for smaller sizes
+  } else if (baseSize === 'l') {
+    europeanSize += xCount * 2; // Add for larger sizes
+  }
+
+  // Return the final European size
+  return europeanSize;
+}
+
 //NUMBER 67 -- failed kata
 
 /*
