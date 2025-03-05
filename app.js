@@ -36,8 +36,22 @@ For
 
 //MY SOLUTION
 function smallestInteger(matrix) {
-  let firstMap = matrix.flat().sort((a,b)=>a-b);
-  return firstMap;
+  
+  const flattened = matrix.flat();
+
+  
+  flattened.sort((a, b) => a - b);
+
+  let smallestMissing = 0;
+
+  for (let num of flattened) {
+    if (num === smallestMissing) {
+      smallestMissing++; 
+    } else if (num > smallestMissing) {
+      break; 
+    }
+  }
+  return smallestMissing;
 }
 
 //NUMBER 69
