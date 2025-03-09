@@ -12,7 +12,7 @@
 //NUMBER 
 
 /*
-
+https://www.codewars.com/kata/65c0161a2380ae78052e5731/train/javascript
 */                       
 
 //MY SOLUTION
