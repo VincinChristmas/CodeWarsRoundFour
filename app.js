@@ -17,11 +17,27 @@ https://www.codewars.com/kata/65c0161a2380ae78052e5731/train/javascript
 
 //MY SOLUTION
 function stonePick(arr) {
-  let sum1 = 0
-  let sum2 = 0
+  //gather the amount of sticks and and cobblestone;
+  let stickArray = [];
+  let cobbleStoneArray = [];
+  //collect the sticks and cobblesone
   for (let i = 0; i < arr.length; i++) {
-    
+    //convert materials into real numbers
+    if (arr[i] === "Sticks") {
+      stickArray.push(arr[i])
+    }
+    if (arr[i] === "Cobblestone") {
+      cobbleStoneArray.push(arr[i]) 
+    }
+    if (arr[i] === "Wood") {
+      stickArray.push("Sticks")
+      stickArray.push("Sticks")
+      stickArray.push("Sticks")
+      stickArray.push("Sticks")
+    }
   }
+  
+  
 }
 
 //NUMBER 70
