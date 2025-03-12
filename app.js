@@ -9,35 +9,35 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
-//NUMBER 
+//NUMBER 71
 
 /*
-https://www.codewars.com/kata/65c0161a2380ae78052e5731/train/javascript
+https://www.codewars.com/kata/65c0161a2380ae78052e5731
 */                       
 
 //MY SOLUTION
 function stonePick(arr) {
-  //gather the amount of sticks and and cobblestone;
-  let stickArray = [];
-  let cobbleStoneArray = [];
-  //collect the sticks and cobblesone
-  for (let i = 0; i < arr.length; i++) {
-    //convert materials into real numbers
-    if (arr[i] === "Sticks") {
-      stickArray.push(arr[i])
-    }
-    if (arr[i] === "Cobblestone") {
-      cobbleStoneArray.push(arr[i]) 
-    }
-    if (arr[i] === "Wood") {
-      stickArray.push("Sticks")
-      stickArray.push("Sticks")
-      stickArray.push("Sticks")
-      stickArray.push("Sticks")
+  let cobblestoneCount = 0;
+  let stickCount = 0;
+  let woodCount = 0;
+  
+  for (const item of arr) {
+    if (item === "Cobblestone") {
+      cobblestoneCount++;
+    } else if (item === "Sticks") {
+      stickCount++;
+    } else if (item === "Wood") {
+      woodCount++;
     }
   }
   
+  stickCount += woodCount * 4;
+  const pickaxesFromCobbleStone = Math.floor(cobblestoneCount / 3);
+  const pickaxesFromSticks = Math.floor(stickCount / 2);
   
+  const maxPickaxes = Math.min(pickaxesFromCobbleStone, pickaxesFromSticks);
+  
+  return maxPickaxes;
 }
 
 //NUMBER 70
