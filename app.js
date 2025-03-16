@@ -9,6 +9,22 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 72
+
+/*
+https://www.codewars.com/kata/65a024af6063fb0ac8c0f0b5/train/javascript
+*/                       
+
+//MY SOLUTION
+function hasScored(s) {
+  if (s==="") {
+    return false;
+  }
+  else {
+    
+  }
+}
+
 //NUMBER 71
 
 /*
