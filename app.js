@@ -8,6 +8,26 @@
 
 
 /*********THE ABOVE IS A TEMPLATE*************** */
+//NUMBER 73
+
+/*
+https://www.codewars.com/kata/64fc03a318692c1333ebc04c
+*/
+
+//MY SOLUTION
+function bestFriend(txt, a, b) {
+  for (let i = 0; i < txt.length; i++) {
+    if (txt[i] === a) {
+      if (i === txt.length-1) {
+        return false
+      }
+      if (txt[i+1] !== b) {
+        return false
+      }
+    }
+  }
+  return true
+}
 
 //NUMBER 72
 
