@@ -8,6 +8,25 @@
 
 
 /*********THE ABOVE IS A TEMPLATE*************** */
+//NUMBER 74
+
+/*
+https://www.codewars.com/kata/664e4f5b12b1b20182ea3e3a/train/javascript
+*/
+
+//MY SOLUTION
+function whichPostcode(postcode){
+  let firstSeg = postcode.slice(postcode[0], postcode.indexOf(' '));
+  let secondSeg = postcode.slice(postcode.indexOf(' ') + 1);
+  
+  for (let i = 0; i < firstSeg.length; i++) {
+    if (/^[a-zA-Z]$/.test(firstSeg[0]) === true) && (/^[a-zA-Z]$/.test(firstSeg[1]) === true || /^\d$/.test(firstSeg[1] === true) && (/^[a-zA-Z]$/.test(firstSeg[2]) === true || /^\d$/.test(firstSeg[2] === true) ) {
+      
+    }
+  }
+  
+  
+}
 //NUMBER 73
 
 /*
