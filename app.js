@@ -19,14 +19,33 @@ function whichPostcode(postcode){
   let firstSeg = postcode.slice(postcode[0], postcode.indexOf(' '));
   let secondSeg = postcode.slice(postcode.indexOf(' ') + 1);
   
-  for (let i = 0; i < firstSeg.length; i++) {
-    if (/^[a-zA-Z]$/.test(firstSeg[0]) === true) && (/^[a-zA-Z]$/.test(firstSeg[1]) === true || /^\d$/.test(firstSeg[1] === true) && (/^[a-zA-Z]$/.test(firstSeg[2]) === true || /^\d$/.test(firstSeg[2] === true) ) {
-      
-    }
+  
+  if (
+    (/^[a-zA-Z]$/.test(firstSeg[0]) === true && /^[a-zA-Z]$/.test(firstSeg[1]) === true) || 
+    (/^[a-zA-Z]$/.test(firstSeg[0]) === true && /^\d$/.test(firstSeg[1]) === true) && 
+    /^\d$/.test(firstSeg[2] === true)
+  )
+    
+  {
+    return "GB"
   }
-  
-  
+  else if (
+        /^\d$/.test(postcode[0])=== true &&
+        /^\d$/.test(postcode[1]) === true &&
+        /^\d$/.test(postcode[2]) === true &&
+        postcode[3] === ' ' &&
+        /^\d$/.test(postcode[4]) === true &&
+        /^\d$/.test(postcode[5]) === true
+      ) 
+    {
+    return "SK"
+    }
+    
 }
+
+  
+  
+
 //NUMBER 73
 
 /*
