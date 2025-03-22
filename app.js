@@ -8,6 +8,26 @@
 
 
 /*********THE ABOVE IS A TEMPLATE*************** */
+
+//NUMBER 76
+
+/*
+https://www.codewars.com/kata/6409aa6df4a0b773ce29cc3d/train/javascript
+*/
+
+//MY SOLUTION
+function realNumbers(n){
+  let collectionArray = [];
+  let sum = 0;
+  while (sum < n) {
+    sum = sum + 1;
+    if (sum % 2 !== 0 && sum % 3 !== 0 && sum % 5 !== 0) {
+      collectionArray.push(sum)
+    }
+  }
+  return collectionArray.length
+}
+
 //NUMBER 75
 
 /*
