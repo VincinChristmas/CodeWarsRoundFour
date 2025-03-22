@@ -8,6 +8,19 @@
 
 
 /*********THE ABOVE IS A TEMPLATE*************** */
+//NUMBER 75
+
+/*
+https://www.codewars.com/kata/643ea1adef815316e5389d17
+*/
+
+//MY SOLUTION
+function quadrantSegment(A, B) {
+  const oppositeX = (A.x > 0 && B.x < 0) || (A.x < 0 && B.x > 0)
+  const oppositeY = (A.y > 0 && B.y < 0) || (A.y < 0 && B.y > 0)
+  return oppositeX || oppositeY
+}
+
 //NUMBER 74
 
 /*
