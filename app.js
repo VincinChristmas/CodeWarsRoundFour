@@ -9,6 +9,29 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 77
+
+/*
+https://www.codewars.com/kata/6402205dca1e64004b22b8de/train/javascript
+*/                       
+
+//MY SOLUTION
+
+function findCaterer(budget, people) {
+  if (people <= 0 || budget < 15 * people) return -1;
+
+  const price3 = people > 60 ? 24 * people : 30 * people; 
+  const price2 = 20 * people;
+  const price1 = 15 * people;
+
+  
+  if (price3 <= budget) return 3;
+  if (price2 <= budget) return 2;
+  if (price1 <= budget) return 1;
+
+  return -1;
+}
+
 //NUMBER 76
 
 /*
