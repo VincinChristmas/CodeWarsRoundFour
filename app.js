@@ -9,6 +9,28 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 78
+
+/*
+https://www.codewars.com/kata/63f96036b15a210058300ca9
+*/                       
+
+//MY SOLUTION
+function secondSymbol(s, symbol) {
+  let letterCollection = [];
+  for (let i=0; i < s.length; i++) {
+    if (s[i] == symbol) {
+      letterCollection.push(i)
+    }
+  }
+  if (letterCollection.length < 2) {
+    return -1
+  }
+  else {
+    return letterCollection[1]
+  }
+}
+
 //NUMBER 77
 
 /*
