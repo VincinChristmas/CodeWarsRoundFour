@@ -8,6 +8,25 @@
 
 
 /*********THE ABOVE IS A TEMPLATE*************** */
+//NUMBER 79
+
+/*
+https://www.codewars.com/kata/58aed2cafab8faca1d000e20
+*/                       
+
+//MY SOLUTION
+function modifiedSum(a, n) {
+  // Write your code here
+  let theSum = 0;
+  let theOtherSum = 0;
+  for (let i = 0; i < a.length; i++) {
+    theOtherSum += a[i];
+    
+    theSum+=a[i]**n;
+    
+  }
+  return theSum - theOtherSum;
+}
 
 //NUMBER 78
 
