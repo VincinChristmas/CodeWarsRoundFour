@@ -8,6 +8,25 @@
 
 
 /*********THE ABOVE IS A TEMPLATE*************** */
+
+//NUMBER 80
+/*
+ https://www.codewars.com/kata/53222010db0eea35ad000001
+*/
+//MY SOLUTION
+function getSlope(p1, p2) {
+  let slopeY = p2[1] - p1[1];
+  let slopeX = p2[0] - p1[0];
+  
+  if (slopeX === 0 || p2 === p1) {
+    return null;
+  }
+  else {
+  
+  return slopeY / slopeX;
+    }
+}
+
 //NUMBER 79
 
 /*
