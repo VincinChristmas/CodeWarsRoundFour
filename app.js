@@ -9,6 +9,17 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 81
+
+/*
+https://www.codewars.com/kata/558445a88826e1376b000011
+*/                       
+
+//MY SOLUTION
+function age(x, y){
+  return (x * y) /(y-1)
+}
+
 //NUMBER 80
 /*
  https://www.codewars.com/kata/53222010db0eea35ad000001
