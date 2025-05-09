@@ -12,10 +12,13 @@
 //NUMBER 82
 
 /*
-
+https://www.codewars.com/kata/52c32ef251f31ae8f50000ae/solutions
 */                       
 
 //MY SOLUTION
+function updateAverage(currentAverage, numRatings, newRating) {
+  return (currentAverage * numRatings + newRating) / (numRatings + 1);
+}
 
 //NUMBER 81
 
