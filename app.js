@@ -9,6 +9,24 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 83
+
+/*
+https://www.codewars.com/kata/57c6b44f58da9ea6c20003da
+*/                       
+
+//MY SOLUTION
+function geo_mean(nums, arith_mean) {
+  let n = nums.length + 1; 
+    let sumKnown = nums.reduce((acc, num) => acc + num, 0);
+    let missingNumber = (arith_mean * n) - sumKnown;
+    
+    let fullList = [...nums, missingNumber];
+    let product = fullList.reduce((acc, num) => acc * num, 1);
+    
+    return Math.pow(product, 1 / n);
+}
+
 //NUMBER 82
 
 /*
