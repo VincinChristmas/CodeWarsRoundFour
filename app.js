@@ -8,6 +8,13 @@
 
 
 /*********THE ABOVE IS A TEMPLATE*************** */
+//NUMBER 84
+
+/*
+https://www.codewars.com/kata/5a5c118380eba8a53d0000ce/javascript
+*/                       
+
+//MY SOLUTION
 
 //NUMBER 83
 
