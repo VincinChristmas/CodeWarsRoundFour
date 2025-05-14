@@ -12,9 +12,38 @@
 
 /*
 https://www.codewars.com/kata/5a5c118380eba8a53d0000ce/javascript
+
 */                       
 
 //MY SOLUTION
+function convertMyDollars(usd, currency) {
+  let expo = 0;
+ let tempUSD = toString(usd).split(''); 
+ let statement
+ 
+ function binaryConvert(tempUSD) {
+   for (let i = 0; i < tempUSD.length; i++) {
+     
+   }
+ }
+ 
+ switch (currency) {
+     case currency = "Argentinian Peso":
+     statement = `You now have ${usd * 10} of ${currency}.`;
+     break;
+     
+     case currency = "Armenian Dram":
+     statement = `You now have ${usd * 478} of ${currency}.`;
+     break;
+     
+     case currency = "Bangladeshi Taka":
+     statement = `You now have ${usd * 478} of ${currency}.`;
+     break;
+     
+   
+  }
+ return statement
+}
 
 //NUMBER 83
 
