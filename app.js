@@ -8,6 +8,28 @@
 
 
 /*********THE ABOVE IS A TEMPLATE*************** */
+
+
+//NUMBER 85
+
+/*
+https://www.codewars.com/kata/5800e9b515e97e7cbb00154f
+*/                       
+
+//MY SOLUTION
+function areaVolume(a,b,h,l) {
+
+  let volume = Math.round(0.5 * (a + b) * h * l); 
+  let base_area = (a + b) * h;
+  let leg_length = Math.sqrt(((b - a) / 2) ** 2 + h ** 2);
+  let perimeter = a + b + 2 * leg_length;
+  let lateral_area = perimeter * l;
+  let total_surface_area = Math.round(base_area + lateral_area);
+      
+  
+    return [total_surface_area, volume];
+  }
+
 //NUMBER 84
 
 /*
