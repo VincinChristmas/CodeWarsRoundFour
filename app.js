@@ -9,6 +9,21 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 86
+
+/*
+https://www.codewars.com/kata/52b50a20fa0e77b304000103
+*/                       
+
+//MY SOLUTION
+function isSantaClausable(obj) {
+  const hasSayHoHoHo = typeof obj.sayHoHoHo === 'function';
+  const hasDistributeGifts = typeof obj.distributeGifts === 'function';
+  const hasGoDownTheChimney = typeof obj.goDownTheChimney === 'function';
+  
+   return hasSayHoHoHo && hasDistributeGifts && hasGoDownTheChimney;
+}
+
 
 //NUMBER 85
 
