@@ -9,6 +9,32 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 87
+
+/*
+https://www.codewars.com/kata/56f935002e6c0d55fa000d92/train/javascript
+*/                       
+
+//MY SOLUTION
+class Shark extends Animal {
+  constructor(name, age, status) {
+     super(name, age, 0, "shark", status); 
+   }
+ }
+ 
+ class Cat extends Animal {
+   constructor(name, age, status) {
+   super(name, age, 4, "cat", status)
+     }
+   introduce() {
+     return `${super.introduce()}  Meow meow!`;
+   }
+ }
+ 
+ class Dog extends Animal {
+   // On your own now - you can do it :D
+ }
+
 //NUMBER 86
 
 /*
