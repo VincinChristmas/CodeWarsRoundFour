@@ -9,6 +9,33 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+
+//NUMBER 89
+
+/*
+https://www.codewars.com/kata/56951add53eccacf44000030
+*/                       
+
+//MY SOLUTION
+function Dog(name, age, breed, vaccinated, wormed) {
+  this.name = name;
+  this.age = age;
+  this.breed = breed;
+  this.vaccinated = vaccinated;
+  this.wormed = wormed;
+}
+
+Dog.prototype.checkDog = function() {
+  if (this.vaccinated && this.wormed) {
+    return `${this.name} can be accepted`;
+  } else if (this.vaccinated || this.wormed) {
+    return `${this.name} can only be accepted by itself`;
+  } else {
+    return `${this.name} can not be accepted`;
+  }
+};
+
+
 //NUMBER 88
 
 /*
