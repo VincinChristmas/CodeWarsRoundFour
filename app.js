@@ -9,6 +9,23 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 91
+
+/*
+https://www.codewars.com/kata/5121303128ef4b495f000001
+*/                       
+
+//MY SOLUTION
+class Person {
+  constructor(name) {
+   this.name = name;
+ }
+
+ greet(yourName) {
+   return `Hello ${yourName}, my name is ${this.name}`;
+ }
+}
+
 //NUMBER 90 
 
 /*
