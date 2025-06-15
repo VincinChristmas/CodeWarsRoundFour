@@ -9,6 +9,24 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 92
+
+/*
+https://www.codewars.com/kata/513e1e47c600c93cef000001
+*/                       
+
+//MY SOLUTION
+class Animal {
+  constructor(name = "name", type="type") {
+    this.name = name;
+    this.type = type;
+  }
+  
+  toString () {
+    return `${this.name} is a ${this.type}`
+  }
+}
+
 //NUMBER 91
 
 /*
