@@ -9,6 +9,14 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 93
+
+/*
+https://www.codewars.com/kata/534fcca5edb124cfe6000f60/javascript
+*/                       
+
+//MY SOLUTION
+
 //NUMBER 92
 
 /*
