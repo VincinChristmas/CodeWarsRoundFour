@@ -9,6 +9,31 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 95
+
+/*
+https://www.codewars.com/kata/6089c7992df556001253ba7d
+*/                       
+
+//MY SOLUTION
+function Song(title, artist) {
+  this.title = title;
+  this.artist = artist;
+  this.listeners = []; 
+
+  this.howMany = function(array) {
+    let newListeners = 0;
+    for (let i = 0; i < array.length; i++) {
+      const listener = array[i].toLowerCase();
+      if (!this.listeners.includes(listener)) {
+        this.listeners.push(listener);
+        newListeners++;
+      }
+    }
+    return newListeners; 
+  };
+}
+
 //NUMBER 94
 
 /*
