@@ -9,6 +9,37 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 96
+
+/*
+https://www.codewars.com/kata/56fcc1ee45040039ab0016da
+*/                       
+
+//MY SOLUTION
+class Cube {
+  constructor(length) {
+    this.length = length;  
+  }
+
+  // --- Surface Area ---
+  get surfaceArea() {
+    return 6 * this.length ** 2;  
+  }
+
+  set surfaceArea(area) {
+    this.length = Math.sqrt(area / 6); 
+  }
+
+  // --- Volume ---
+  get volume() {
+    return this.length ** 3;  
+  }
+
+  set volume(vol) {
+    this.length = Math.cbrt(vol);  
+  }
+}
+
 //NUMBER 95
 
 /*
