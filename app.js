@@ -9,6 +9,17 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 97
+
+/*
+https://www.codewars.com/kata/53d628de83db278fb1000710
+*/                       
+
+//MY SOLUTION
+String.prototype.myNewMethod = function() {
+  return this.toUpperCase();
+};
+
 //NUMBER 96
 
 /*
