@@ -9,6 +9,21 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 98
+
+/*
+https://www.codewars.com/kata/5882b052bdeafec15e0000e6/train/javascript
+*/                       
+
+//MY SOLUTION
+class Quark{
+  constructor (color, flavor) {
+  this.color = color;
+  this.flavor = flavor;
+  this.baryon_number = 1/3;
+}
+  }
+
 //NUMBER 97
 
 /*
