@@ -17,11 +17,29 @@ https://www.codewars.com/kata/5882b052bdeafec15e0000e6/train/javascript
 
 //MY SOLUTION
 class Quark{
+  
   constructor (color, flavor) {
+    let validColors = ["red","blue","green"];
+    let validFlavors = ['up', 'down', 'strange', 'charm', 'top', 'bottom']
   this.color = color;
   this.flavor = flavor;
   this.baryon_number = 1/3;
+    
+    if (!validColors.includes(color)) {
+      return "colors must be red, green or blue";
+    }
+    
+    if (!validFlavors.includes(flavor)) {
+      return "flavor bust be up, down, strange, charm, top, or bottom ";
+    }
 }
+  
+   interact(otherQuark) {
+    
+    const tempColor = this.color;
+    this.color = otherQuark.color;
+    otherQuark.color = tempColor;
+  }
   }
 
 //NUMBER 97
