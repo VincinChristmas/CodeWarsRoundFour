@@ -9,6 +9,14 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+
+/*
+https://www.codewars.com/kata/5d774cfde98179002a7cb3c8/javascript
+*/
+
+//The Problem:
+//This is a failed kata that I can come back to and look at later if I choose to.
+
 //NUMBER 98
 
 /*
