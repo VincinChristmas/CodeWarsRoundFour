@@ -9,6 +9,14 @@
 
 /*********THE ABOVE IS A TEMPLATE*************** */
 
+//NUMBER 98
+
+/*
+https://www.codewars.com/kata/632408defa1507004aa4f2b5/train/javascript
+*/
+
+
+//MY SOLUTION
 
 /*
 https://www.codewars.com/kata/5d774cfde98179002a7cb3c8/javascript
